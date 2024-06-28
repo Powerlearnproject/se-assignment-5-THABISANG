@@ -1,120 +1,107 @@
-[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/XoLGRbHq)
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15343501&assignment_repo_type=AssignmentRepo)
-# SE-Assignment-5
-Installation and Navigation of Visual Studio Code (VS Code)
- Instructions:
-Answer the following questions based on your understanding of the installation and navigation of Visual Studio Code (VS Code). Provide detailed explanations and examples where appropriate.
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/vbnbTt5m)
+[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=15344584&assignment_repo_type=AssignmentRepo)
+# Dev_Setup
+Setup Development Environment
 
- Questions:
-1. Installation of VS Code
-Describe the steps to download and install Visual Studio Code on Windows 11 operating system. Include any prerequisites that might be needed.
-THE PREREQUISITES
-- Make sure that you have a stable internet connection.
-- You also have administrator access on your windows 11 machine to install VS code.
+#Assignment: Setting Up Your Developer Environment
 
-STEPS TO DOWNLOAD AND INSTALL VISUAL STUDIO CODE ON WINDOWS 11
-- On your web browser go the Visual Studio Code website https://code.visualstudio.com/
-- Download for windows 
-- Once downloaded completes, locate the downloaded installer file 
-- Double- click on the installer file to start the installation process
-- When windows ask you for a confirmation just click "yes" to proceed.
-- The Visual Studio Code setup wizard will open then click next and continue.
-- Choose the location where you want to install VS code 
-- Click next and install to begin the installation process
-- To verify that Visual Studio Code has been installed correctly open  it and click the version number displayed in the lower right corner of the window.
+#Objective:
+This assignment aims to familiarize you with the tools and configurations necessary to set up an efficient developer environment for software engineering projects. Completing this assignment will give you the skills required to set up a robust and productive workspace conducive to coding, debugging, version control, and collaboration.
 
-2.First-time Setup:
-After installing VS Code, what initial configurations and settings should be adjusted for an optimal coding environment? Mention any important settings or extensions.
-- User interface thr status bar visibility and activity bar visibility.
-- File Associations
-- Extensions ( Install the Debugger for chrome, Prettier - code formatter, Bracket Pair Colorizer, GitLens)
-- Integrated Terminal can be powerShell or Command Prompt
-- Workspace setting save specific settings for each project 
-- Keybindings to costomize the keyboard shortcuts
+#Tasks:
+Step-by-Step Guide to Setting Up Your Development Environment
+1. Download and Install Windows 11
+Visit Microsoft's Windows 11 download page and follow the instructions to download and install Windows 11 on your machine.
 
+2. Install Visual Studio Code
+Go to the Visual Studio Code download page.
+Download the installer for Windows and run it.
+Follow the installation instructions to complete the setup of Visual Studio Code.
 
-3. User Interface Overview:
-Activity Bar: Located on the far left, it contains icons for navigating to different views such as Explorer (file management), Search, Source Control (Git), Run and Debug, and Extensions. It provides quick access to various functionalities within VS Code.
-- Side Bar: Adjacent to the Activity Bar, it displays different views depending on the selected icon in the Activity Bar. For example, in the Explorer view, you can manage files and folders; in the Source Control view, you can interact with Git.
+3. Set Up Version Control System (Git)
+Install Git:
+Download Git for Windows from git-scm.com.
+Run the installer and follow the prompts to install Git on your machine.
+Configure Git:
+Open Git Bash or the command prompt and set up your username and email:
+bash
+Copy code
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+Optionally, configure Git with additional settings like editor preference:
+bash
+Copy code
+git config --global core.editor "code --wait"
+Create a GitHub Account:
 
-- Editor Group: The main area where files are opened for editing. VS Code supports multiple editor groups which can be arranged side by side or in columns, allowing you to work on multiple files simultaneously.
+Go to GitHub and sign up for a new account if you don't have one.
+Initialize a Git Repository and Make Your First Commit:
+Create a new directory for your project.
+Initialize a Git repository:
+bash
+Copy code
+git init
+Create some files, stage them, commit them:
+bash
+Copy code
+echo "# My Project" >> README.md
+git add README.md
+git commit -m "Initial commit"
 
-- Status Bar: Located at the bottom, it displays information about the current project and editor, such as the Git branch, language mode, line endings, and encoding. It also provides access to settings and features like indentation and language mode switching.
+4. Install Python and Necessary Tools
+Download Python from python.org.
+During installation, ensure you select the option to add Python to PATH.
+Verify installation by opening a command prompt and typing:
+- bash
+- Copy code
+python --version
+Install pip (Python package manager) if not installed automatically:
+- bash
+- Copy code
+python -m ensurepip
 
-4. Command Palette:
-- Purpose: The Command Palette allows you to execute commands and perform various tasks in VS Code without using the mouse.
-- Access: Press Ctrl+Shift+P (Windows/Linux) or Cmd+Shift+P (Mac) to open the Command Palette.
-Examples of Tasks:
-- Opening files (Open File)
-- Changing the editor layout (Change Editor Layout)
-- Installing extensions (Extensions: Install Extensions)
-- Running tasks (Tasks: Run Task)
-- Changing the theme (Preferences: Color Theme)
+5. Install MySQL Database
+Download MySQL from MySQL Community Downloads.
+Run the installer and follow the prompts to install MySQL Server and MySQL Workbench.
 
-5. Extensions in VS Code:
-- Role: Extensions enhance VS Code's functionality by adding support for different programming languages, frameworks, and tools.
-Finding and Installing:
-- Access the Extensions view (Ctrl+Shift+X) or click on the Extensions icon in the Activity Bar.
-- Search for extensions by name or category, then click Install to add them to VS Code.
-Managing:
-- Manage extensions from the Extensions view, where you can enable/disable, uninstall, and update extensions.
-Examples for Web Development:
-- ESLint: JavaScript linter.
-- Live Server: Launch a local development server with live reload capability.
-- Debugger for Chrome: Debug JavaScript code running in the Chrome browser.
-- HTML CSS Support: IntelliSense for HTML and CSS.
+6. Optional: Set Up Development Environments and Virtualization
+Consider using Docker or virtual machines (e.g., VirtualBox) to manage project dependencies and ensure consistent environments.
 
-6. Integrated Terminal:
-Opening: Press Ctrl+`` (Backtick) or go to View>Terminal`.
-Advantages:
-- Seamless integration within VS Code environment.
-- Access to all shell commands and utilities.
-- Allows for direct interaction with the workspace (e.g., running build scripts, Git commands) without switching windows.
+7. Explore Extensions and Plugins for Visual Studio Code
+Open Visual Studio Code and explore extensions from the Extensions view (Ctrl+Shift+X).
+Install extensions relevant to your programming languages and project needs (e.g., Python, GitLens, Docker).
 
-7. File and Folder Management:
-Creating and Opening:
-- Use the Explorer view in the Side Bar to create new files/folders and open existing ones.
-- Alternatively, use Ctrl+O to open files directly.
-Navigation:
-- Click on file names in the Explorer view to open them.
-- Use breadcrumbs at the top of the editor to navigate through nested files and folders efficiently (Ctrl+Click on breadcrumb segments to reveal file tree).
+8. Document Your Setup
+Create a detailed document outlining each step of your setup process.
+Include screenshots where necessary to illustrate configurations or installations.
+Document any customizations, configurations, or troubleshooting steps encountered.
 
-8. Settings and Preferences:
-Customizing Settings:
-- Access settings via File > Preferences > Settings or Ctrl+,.
-- Modify settings in settings.json or use the GUI interface.
-Examples:
-- Changing the theme (workbench.colorTheme).
-- Adjusting font size (editor.fontSize).
-- Customizing keybindings (keybindings.json).
+9. Create GitHub Repository
+Create a new repository on GitHub for your project.
+- Push your local Git repository to GitHub:
+bash
 
-9. Debugging in VS Code:
-Setting Up Debugging:
-- Create a launch.json configuration file via the Debug view (Ctrl+Shift+D).
-- Select a debugging environment (e.g., Node.js, Chrome).
-Starting Debugging:
-- Set breakpoints by clicking in the gutter area or pressing F9.
-- Start debugging (F5) to run the program and pause at breakpoints.
-Key Features:
-- Step through code (F10, F11).
-- Watch variables and expressions.
-- Debug Console for interactive debugging (Ctrl+Shift+Y).
+git remote add origin https://github.com/yourusername/your-repository.git
+git branch -M main
+git push -u origin main
 
-10. Using Source Control:
-Integrating Git:
-- Install Git and ensure it's accessible from the command line (git --version).
-- Initialize a Git repository via the Source Control view (Ctrl+Shift+G).
-Committing Changes:
-- Stage changes by clicking + next to modified files.
-- Enter commit messages and commit (Ctrl+Enter).
-- Pushing Changes to GitHub:
-- Link your repository to a remote GitHub repository.
-- Push commits to GitHub using commands like Push in the Source Control view.
+10. Submission
+Compile your setup document and ensure it includes all necessary details and screenshots.
+Share the GitHub repository link along with your setup document through the designated platform or via email. 
 
+#Deliverables:
+- Document detailing the setup process with step-by-step instructions and screenshots where necessary.
+- A GitHub repository containing a sample project initialized with Git and any necessary configuration files (e.g., .gitignore).
+- A reflection on the challenges faced during setup and strategies employed to overcome them.
 
- Submission Guidelines:
-- Your answers should be well-structured, concise, and to the point.
-- Provide screenshots or step-by-step instructions where applicable.
-- Cite any references or sources you use in your answers.
-- Submit your completed assignment by 1st July 
+#Submission:
+Submit your document and GitHub repository link through the designated platform or email to the instructor by the specified deadline.
 
+#Evaluation Criteria:**
+- Completeness and accuracy of setup documentation.
+- Effectiveness of version control implementation.
+- Appropriateness of tools selected for the project requirements.
+- Clarity of reflection on challenges and solutions encountered.
+- Adherence to submission guidelines and deadlines.
+
+Note: Feel free to reach out for clarification or assistance with any aspect of the assignment.
